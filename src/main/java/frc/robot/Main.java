@@ -8,8 +8,10 @@ import edu.wpi.first.wpilibj.RobotBase;
 
 public final class Main {
   private Main() {}
+  // Added a comment
 
   public static void main(String... args) {
     RobotBase.startRobot(Robot::new);
+    if (RobotBase.isReal()) System.out.println("Robot is real");
   }
 }
